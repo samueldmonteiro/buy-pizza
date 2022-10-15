@@ -7,3 +7,10 @@ export const qs = element => {
 export const qsAll = element => {
     return document.querySelectorAll(element);
 }
+
+export const formatPrice = {
+
+    toBrl(price) {
+        return price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    }
+}

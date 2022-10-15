@@ -1,9 +1,85 @@
 export const data = [
-    { id: 1, name: 'Mussarela', img: 'images/pizza.png', price: 20.19, sizes: ['100g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 2, name: 'Calabresa', img: 'images/pizza2.png', price: 18.00, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 3, name: 'Quatro Queijos', img: 'images/pizza3.png', price: 17.45, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 4, name: 'Americana', img: 'images/pizza4.png', price: 19.77, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 5, name: 'Sorvete', img: 'images/pizza5.png', price: 21.43, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 6, name: 'Moda da Casa', img: 'images/pizza6.png', price: 18.55, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' },
-    { id: 7, name: 'Chocolate', img: 'images/pizza7.png', price: 22.36, sizes: ['320g', '530g', '860g'], description: 'Descrição da pizza em mais de uma linha muito legal bem interessante' }
+
+    {
+        id: 1,
+        name: 'Mussarela',
+        img: 'images/pizza.png',
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante',
+        sizes: [
+            { name: "pequena", size: 320, price: 15.00 },
+            { name: "média", size: 450, price: 18.50, selected: true },
+            { name: "grande", size: 500, price: 25.00 },
+        ],
+    },
+
+    {
+        id: 2,
+        name: 'Calabresa',
+        img: 'images/pizza2.png',
+        sizes: [
+            { name: "pequena", size: 340, price: 17.00 },
+            { name: "média", size: 490, price: 19.50, selected: true },
+            { name: "grande", size: 520, price: 28.00 },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    },
+
+    {
+        id: 3,
+        name: 'Quatro Queijos',
+        img: 'images/pizza3.png',
+        sizes: [
+            { name: "pequena", size: 320, price: 12.00 },
+            { name: "média", size: 450, price: 18.50, selected: true },
+            { name: "grande", size: 600, price: 30.00 },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    },
+
+    {
+        id: 4,
+        name: 'Americana',
+        img: 'images/pizza4.png',
+        sizes: [
+            { name: "pequena", size: 320, price: 13.00 },
+            { name: "média", size: 450, price: 19.50 },
+            { name: "grande", size: 500, price: 25.00, selected: true },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    },
+
+    {
+        id: 5,
+        name: 'Sorvete', img: 'images/pizza5.png',
+        sizes: [
+            { name: "pequena", size: 320, price: 15.00 },
+            { name: "grande", size: 500, price: 25.00, selected: true },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    },
+
+
+    {
+        id: 6,
+        name: 'Moda da Casa',
+        img: 'images/pizza6.png',
+        sizes: [
+            { name: "pequena", size: 340, price: 16.20 },
+            { name: "média", size: 450, price: 18.90, selected: true },
+            { name: "grande", size: 500, price: 22.00 },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    },
+
+    {
+        id: 7,
+        name: 'Chocolate',
+        img: 'images/pizza7.png',
+        sizes: [
+            { name: "pequena", size: 220, price: 13.00 },
+            { name: "média", size: 450, price: 18.90, selected: true },
+            { name: "grande", size: 500, price: 28.90 },
+        ],
+        description: 'Descrição da pizza em mais de uma linha muito legal bem interessante'
+    }
 ];
