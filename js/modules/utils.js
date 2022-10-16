@@ -9,7 +9,6 @@ export const qsAll = element => {
 }
 
 export const formatPrice = {
-
     toBrl(price) {
         return price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     }

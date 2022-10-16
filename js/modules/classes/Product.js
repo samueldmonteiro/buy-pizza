@@ -9,6 +9,10 @@ export default class Product {
         this.description = description;
         this.img = img;
         this.sizes = sizes;
+
+        this.total = 0;
+        this.totalQt = 0;
+        
     }
 
     currentPrice(formated = false) {
@@ -18,13 +22,32 @@ export default class Product {
         for (let size of this.sizes) {
             if (size.selected) {
                 currentPrice = size.price;
+                break;
             }
         }
-
         if (formated) {
             return formatPrice.toBrl(currentPrice);
         }
         return currentPrice;
+    }
+
+    getPriceBySize(sizeId, formated = false) {
+
+        for (const size of this.sizes) {
+            if (size.id == sizeId) {
+                if (formated) {
+                    return formatPrice.toBrl(size.price);
+                }
+                return size.price;
+            }
+        }
+    }
+
+    getTotal(formated) {
+        if (formated) {
+            return formatPrice.toBrl(this.total);
+        }
+        return this.total;
     }
 
     findById(id) {
