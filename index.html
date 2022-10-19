@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Pizza</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -30,7 +31,7 @@
             <div class="cart--item-nome">--</div>
             <div class="cart--item--qtarea">
                 <button class="cart--item-qtmenos">-</button>
-                <div class="cart--item--qt">1</div>
+                <div class="cart--item--qt"></div>
                 <button class="cart--item-qtmais">+</button>
             </div>
         </div>
@@ -54,7 +55,7 @@
                     <span id="subtotal-value">R$ --</span>
                 </div>
                 <div class="cart--totalitem desconto">
-                    <span>Desconto (-10%)</span>
+                    <span>Desconto (-<span id="discount"></span>%)</span>
                     <span id="discount-value">R$ --</span>
                 </div>
                 <div class="cart--totalitem total big">

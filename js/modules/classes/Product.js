@@ -3,7 +3,7 @@ import { data } from "../data.js";
 
 export default class Product {
 
-    constructor(id, name, description, img, sizes) {
+    constructor(id = null, name = null, description = null, img = null, sizes = null) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -12,7 +12,16 @@ export default class Product {
 
         this.total = 0;
         this.totalQt = 0;
-        
+
+        if (this.sizes) {
+            for (const size of this.sizes) {
+                if (size.selected) {
+                    this.currentSize = size.id;
+                    break;
+                }
+            }
+        }
+
     }
 
     currentPrice(formated = false) {
@@ -39,6 +48,14 @@ export default class Product {
                     return formatPrice.toBrl(size.price);
                 }
                 return size.price;
+            }
+        }
+    }
+
+    getCurrentSize() {
+        for (const size of this.sizes) {
+            if (size.id == this.currentSize) {
+                return size;
             }
         }
     }
