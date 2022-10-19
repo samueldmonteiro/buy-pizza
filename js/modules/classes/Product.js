@@ -3,7 +3,7 @@ import { data } from "../data.js";
 
 export default class Product {
 
-    constructor(id = null, name = null, description = null, img = null, sizes = null) {
+    constructor(id, name, description, img, sizes) {
         this.id = id;
         this.name = name;
         this.description = description;
