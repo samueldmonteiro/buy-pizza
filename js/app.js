@@ -144,6 +144,22 @@ const productCart = {
         });
         productCart.update();
     },
+
+    finalizeOrder() {
+
+        const items = productCart.products.map(product => {
+            const item = {};
+            item.id = product.id;
+            item.currentSize = product.currentSize;
+            item.qt = product.totalQt;
+            return item;
+        });
+
+        console.log("items do pedido:");
+        items.forEach(i => {
+            console.log(i);
+        })
+    }
 }
 
 const productModal = {
@@ -273,6 +289,8 @@ productModal.modal.querySelector(".pizzaWindowBody").addEventListener("click", _
     }, 500);
 });
 
+
+productCart.cart.querySelector(".cart--finalizar").addEventListener("click", productCart.finalizeOrder);
 
 
 // init
