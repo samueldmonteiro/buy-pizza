@@ -19,8 +19,8 @@ Simulação de uma aplicação de compra de pizzas feita JavaScript
 
 ## Imagens
 
-<img src="" width="100%" />
-<img src="" width="100%" />
+<img src="https://github.com/samueldmonteiro/buy-pizza/blob/main/images/project/p1.png" width="100%" />
+<img src="https://github.com/samueldmonteiro/buy-pizza/blob/main/images/project/p2.png" width="100%" />
 
 ### Clonar repositório
 
